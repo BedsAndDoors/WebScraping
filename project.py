@@ -115,7 +115,6 @@ while count < 58:
             count+=1
 
 #BTC & ETH TEXT ALERTS
-#THIS DOES WORK, FEEL FREE TO SPAM MY NUMBER WITH TEXTS 
 
 accountSID = ''
 authToken = ''
