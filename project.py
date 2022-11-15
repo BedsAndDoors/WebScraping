@@ -125,9 +125,9 @@ while count < 58:
 
 #BTC & ETH TEXT ALERTS
 #THIS DOES WORK, FEEL FREE TO SPAM MY NUMBER WITH TEXTS 
-'''
+
 accountSID = 'AC236c69cdb975bdeea48058c9b700a4bf'
-authToken = '262a37061e46f1485b21523e409bacba'
+authToken = '39d0e377d84851721849bf987fa270e7'
 from twilio.rest import Client
 
 TwilioNumber = '+16293484743'
@@ -175,4 +175,4 @@ while count < len(tablecells[0:58]):
         current_price+=10
         name+=10
         count+=1
-        '''
+        
