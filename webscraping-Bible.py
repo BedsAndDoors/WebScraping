@@ -29,11 +29,11 @@ my_verse = random.choice(verse_list[:-5])
 message = 'Chapter: ' + chapter + ' Verse:' + my_verse
 print(message)
 
-accountSID = 'AC236c69cdb975bdeea48058c9b700a4bf'
-authToken = '39d0e377d84851721849bf987fa270e7'
+accountSID = ''
+authToken = ''
 from twilio.rest import Client
 
-TwilioNumber = '+16293484743'
-myCellPhone = '+18153534197'
+TwilioNumber = '+'
+myCellPhone = '+'
 client = Client(accountSID,authToken)
 textmessage = client.messages.create(to=myCellPhone,from_=TwilioNumber,body=message)

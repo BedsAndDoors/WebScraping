@@ -26,15 +26,6 @@ tablecells = soup.findAll('div',attrs={'class':'table-cell'})
 #If bitcoin or ethereum fall below (40K btc) or (3K eth) have a text allert
 
 #List Top 5 Part
-#BACKGROUND INFO: I used WeBull which does not list the crypto top movers in a organized fashion like it does for stocks
-#Therefore I had to gather all the percent changes into a list
-#Then I removed all the values EXCEPT the top five stocks from the list
-#Then it iterates through the list and checks each crypto to see if it is a top mover 
-#If the crypto is a top mover, it goes through the code for the output
-#Otherwise it skips that crypto
-#Sorry if this is confusing code, I did not realize WeBull didn't organize its cryptos by the biggest movers until I finished the ouput section
-#And instead of trying a different site I did this as a solution, which is long and confusing but it does work
-#Thanks for reading
 
 p_change = 3
 count=0
@@ -126,12 +117,12 @@ while count < 58:
 #BTC & ETH TEXT ALERTS
 #THIS DOES WORK, FEEL FREE TO SPAM MY NUMBER WITH TEXTS 
 
-accountSID = 'AC236c69cdb975bdeea48058c9b700a4bf'
-authToken = '39d0e377d84851721849bf987fa270e7'
+accountSID = ''
+authToken = ''
 from twilio.rest import Client
 
-TwilioNumber = '+16293484743'
-myCellPhone = '+18153534197'
+TwilioNumber = '+'
+myCellPhone = '+'
 client = Client(accountSID,authToken)
 
 count=0
